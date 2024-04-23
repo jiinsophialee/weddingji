@@ -26,7 +26,7 @@
     }
 
     .copy-button {
-      background-color: #AECO8E; /* PASETL Green */
+      background-color: #AEC08E; /* Green */
       border: none;
       color: white;
       padding: 10px 40px;
@@ -35,13 +35,19 @@
       font-size: 30px; /* Adjust the font size of the buttons */
       margin: 5px 0; /* Adjust spacing between buttons */
       cursor: pointer;
-      border-radius: 10px;
+      border-radius: 4px;
       font-family: 'Arial', sans-serif; /* Change the font family */
+      display: block; /* Ensure buttons are displayed inline */
+    }
+
+    /* Reset margin for paragraphs */
+    .button-container p {
+      margin: -20px;
     }
 
     /* Hover effect */
     .copy-button:hover {
-      background-color: #45a049; /* Darker Green */
+      background-color: #8B9971; /* Darker Green */
     }
   </style>
 </head>
@@ -50,6 +56,7 @@
 </head>
 <body>
 
+<pre>
 <div class="button-container">
   <!-- Text and corresponding buttons -->
 <p>신부 계좌번호</p>
@@ -60,6 +67,7 @@
 <p>신부 부모님 계좌번호</p>
 <button class="copy-button" onclick="copyTextToClipboard('144-07-048581')">우리은행 이명석 144-07-048581</button>
 </div>
+</pre>
 
 <script>
   // Function to copy text to clipboard and show alert
