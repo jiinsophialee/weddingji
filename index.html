@@ -4,32 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>신부 측 계좌번호</title>
-<style>
-    /* CSS for larger font size */
-    body {
-      font-size: 20px; /* Adjust the font size as needed */
-    }
 
-    /* CSS for centering buttons */
-    .button-container {
+ <style>
+    /* CSS for larger font size and centering buttons */
+    body {
+      font-size: 30px; /* Adjust the font size as needed */
+      font-family: 'Arial', sans-serif; /* Change the font family */
+      color: #333; /* Set default font color */
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
+      margin: 0;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-bottom: 20px; /* Add margin to the bottom of each button container */
+      margin-left: 20px; /* Add margin to the left side of each button container */
+      margin-right: 20px; /* Add margin to the right side of each button container */
     }
 
     .copy-button {
       background-color: #4CAF50; /* Green */
       border: none;
       color: white;
-      padding: 10px 20px;
+      padding: 10px 40px;
       text-align: center;
       text-decoration: none;
-      font-size: inherit; /* Inherit font size from the body */
-      margin: 10px 0; /* Adjust spacing between buttons */
+      font-size: 30px; /* Adjust the font size of the buttons */
+      margin: 5px 0; /* Adjust spacing between buttons */
       cursor: pointer;
-      border-radius: 8px;
+      border-radius: 10px;
+      font-family: 'Arial', sans-serif; /* Change the font family */
     }
 
     /* Hover effect */
@@ -37,13 +44,22 @@
       background-color: #45a049; /* Darker Green */
     }
   </style>
+</head>
+<body>
 
 </head>
 <body>
 
-<!-- Text and corresponding buttons -->
-<p>신부 이지인: <button onclick="copyTextToClipboard('3333-11-0797265')">카카오뱅크 3333-11-0797265</button></p>
-<p>신부 부모님: <button onclick="copyTextToClipboard('Text 2')">우리은행 144-07-048581</button></p>
+<div class="button-container">
+  <!-- Text and corresponding buttons -->
+<p>신부 계좌번호</p>
+<button class="copy-button" onclick="copyTextToClipboard('3333-11-0797265')">카카오뱅크 이지인 3333-11-0797265</button>
+</div>
+
+<div class="button-container">
+<p>신부 부모님 계좌번호</p>
+<button class="copy-button" onclick="copyTextToClipboard('144-07-048581')">우리은행 이명석 144-07-048581</button>
+</div>
 
 <script>
   // Function to copy text to clipboard and show alert
